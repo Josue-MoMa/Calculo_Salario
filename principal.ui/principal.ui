@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Principal</class>
+ <widget class="QMainWindow" name="Principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>637</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Lucida Fax</family>
+    <pointsize>12</pointsize>
+    <italic>true</italic>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Principal</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../salario.png</normaloff>../../salario.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(142, 197, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QWidget" name="widget_7" native="true">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QWidget" name="widget_5" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+background-color: rgb(187, 254, 255);</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QWidget" name="widget" native="true">
+            <layout class="QFormLayout" name="formLayout">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="font">
+                <font>
+                 <family>Monotype Corsiva</family>
+                 <pointsize>16</pointsize>
+                 <italic>true</italic>
+                </font>
+               </property>
+               <property name="text">
+                <string>Nombre:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="inNombre">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="toolTip">
+                <string>Ingrese el nombre del trabajador</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="placeholderText">
+                <string>Nombre del trabajador</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_2">
+               <property name="font">
+                <font>
+                 <family>Monotype Corsiva</family>
+                 <pointsize>16</pointsize>
+                 <italic>true</italic>
+                </font>
+               </property>
+               <property name="text">
+                <string>Horas Trabajadas:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QSpinBox" name="inHoras">
+               <property name="font">
+                <font>
+                 <pointsize>11</pointsize>
+                </font>
+               </property>
+               <property name="toolTip">
+                <string>Horas trabajas en la semana</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="maximum">
+                <number>50</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_2" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QGroupBox" name="gbJornadaLaboral">
+               <property name="font">
+                <font>
+                 <family>Monotype Corsiva</family>
+                 <pointsize>16</pointsize>
+                 <italic>true</italic>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(240, 240, 240);</string>
+               </property>
+               <property name="title">
+                <string>Jornada Laboral</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                 <widget class="QRadioButton" name="inMatutino">
+                  <property name="font">
+                   <font>
+                    <family>Mongolian Baiti</family>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="statusTip">
+                   <string>Jornada de la mañana</string>
+                  </property>
+                  <property name="text">
+                   <string>Matutino</string>
+                  </property>
+                  <property name="checked">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="inVespertino">
+                  <property name="font">
+                   <font>
+                    <family>Mongolian Baiti</family>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="statusTip">
+                   <string>Jornada de la tarde</string>
+                  </property>
+                  <property name="text">
+                   <string>Vespertino</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="inNocturno">
+                  <property name="font">
+                   <font>
+                    <family>Mongolian Baiti</family>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="statusTip">
+                   <string>Jornada de la noche</string>
+                  </property>
+                  <property name="text">
+                   <string>Nocturono</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_3" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>168</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="cmdCalcular">
+               <property name="font">
+                <font>
+                 <family>Segoe Print</family>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="statusTip">
+                <string>Realice un click para calcular</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(64, 246, 255);</string>
+               </property>
+               <property name="text">
+                <string>Calcular</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_6" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>44</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_4" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QPlainTextEdit" name="outResultados">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>637</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>&amp;Archivo</string>
+    </property>
+    <addaction name="action_Nuevo"/>
+    <addaction name="actionA_brir"/>
+    <addaction name="action_Guardar"/>
+    <addaction name="separator"/>
+    <addaction name="action_Calcular"/>
+    <addaction name="separator"/>
+    <addaction name="action_Salir"/>
+   </widget>
+   <widget class="QMenu" name="menu_Ayuda">
+    <property name="title">
+     <string>Ay&amp;uda</string>
+    </property>
+    <addaction name="action_Acerca_de_Salario"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menu_Ayuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Nuevo">
+   <property name="text">
+    <string>&amp;Nuevo</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Fax</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionA_brir">
+   <property name="text">
+    <string>A&amp;brir</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Fax</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_Guardar">
+   <property name="text">
+    <string>&amp;Guardar</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Fax</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="action_Calcular">
+   <property name="text">
+    <string>&amp;Calcular</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Fax</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="action_Salir">
+   <property name="text">
+    <string>&amp;Salir</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Fax</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action_Acerca_de_Salario">
+   <property name="text">
+    <string>&amp;Acerca de Salario</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Fax</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>action_Salir</sender>
+   <signal>triggered()</signal>
+   <receiver>Principal</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>283</x>
+     <y>188</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
